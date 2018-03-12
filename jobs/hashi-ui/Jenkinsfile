@@ -1,6 +1,6 @@
 node {
     ansiColor('xterm') {
-        git url: 'git@github.com:chongsk/nomadfiles.git'
+        git url: 'https://github.com/chongsk/nomadfiles.git'
         def levant_docker = docker.image('jrasell/levant:0.0.4')
         levant_docker.pull()
 
