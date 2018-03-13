@@ -19,9 +19,10 @@ job "hashi-ui" {
 
       config {
         image = "jippi/hashi-ui:[[.version]]"
+
         port_map {
           http = 3000
-        }		
+        }
       }
 
       service {
@@ -40,9 +41,7 @@ job "hashi-ui" {
 
       env {
         NOMAD_ENABLE = 1
-        NOMAD_ADDR   = "http://[[.localIP]]:4646"
-        CONSUL_ENABLE = 1
-        CONSUL_ADDR   = "http://[[.localIP]]:9500"		
+		NOMAD_ADDR   = "http://[[.localIP]]:4646"
       }
 
       resources {
