@@ -19,7 +19,6 @@ job "hashi-ui" {
 
       config {
         image = "jippi/hashi-ui:[[.version]]"
-		network_mode = "host"
       }
 
       service {
