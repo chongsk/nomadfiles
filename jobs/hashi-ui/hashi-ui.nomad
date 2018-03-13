@@ -42,6 +42,8 @@ job "hashi-ui" {
       env {
         NOMAD_ENABLE = 1
 		NOMAD_ADDR   = "http://[[.localIP]]:4646"
+		CONSUL_ENABLE = 1
+		CONSUL_ADDR  = "[[.localIP]]:9500"
       }
 
       resources {
