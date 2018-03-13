@@ -234,7 +234,7 @@ job "hashi-ui" {
           mbits = [[.mbits]]
           port "db" {}
         }
-		
+	  }	
 
       # The "service" stanza instructs Nomad to register this task as a service
       # in the service discovery engine, which is currently Consul. This will
