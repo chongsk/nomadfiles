@@ -1,11 +1,12 @@
 datacenter: 'dc1'
 region: 'global'
+localIP: '10.0.2.15'
 
 # Artifact
-# version: 'v0.13.1'
+ version: 'v0.13.1'
 
 # URLPrefix
-# urlprefix: 'hashi-ui.prod.host/'
+ urlprefix: 'hashi-ui.prod.host/'
 
 # Resources
 cpu: 500
