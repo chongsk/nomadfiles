@@ -8,6 +8,9 @@ job "hashi-ui" {
   update {
     stagger      = "30s"
     max_parallel = 1
+    min_healthy_time = "10s"
+    healthy_deadline = "10m"	
+	auto_revert      = true
   }
 
   group "hashi-ui" {
@@ -44,6 +47,7 @@ job "hashi-ui" {
 		NOMAD_ADDR   = "http://[[.localIP]]:4646"
 		CONSUL_ENABLE = 1
 		CONSUL_ADDR  = "[[.localIP]]:9500"
+		LISTEN_ADDRESS = "0.0.0.0:3001"
       }
 
       resources {
