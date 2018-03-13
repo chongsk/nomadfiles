@@ -22,10 +22,6 @@ job "hashi-ui" {
 
       config {
         image = "jippi/hashi-ui:[[.version]]"
-
-        port_map {
-          http = 3000
-        }
       }
 
       service {
