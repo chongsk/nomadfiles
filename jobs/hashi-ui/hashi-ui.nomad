@@ -19,6 +19,9 @@ job "hashi-ui" {
 
       config {
         image = "jippi/hashi-ui:[[.version]]"
+        port_map {
+          http = 3000
+        }		
       }
 
       service {
@@ -48,9 +51,7 @@ job "hashi-ui" {
 
         network {
           mbits = [[.mbits]]
-          port "http" {
-            static = 3000
-          }
+          port  "http"{}
         }
       }
     }
