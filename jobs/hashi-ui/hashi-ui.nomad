@@ -43,7 +43,6 @@ job "hashi-ui" {
 		NOMAD_ADDR   = "http://[[.localIP]]:4646"
 		CONSUL_ENABLE = 1
 		CONSUL_ADDR  = "[[.localIP]]:9500"
-		NOMAD_PORT_http = "0.0.0.0:3001"
       }
 
       resources {
