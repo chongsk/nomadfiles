@@ -1,5 +1,5 @@
 def hashiui_envs = [
-            'prod':'10.0.2.15',
+            'prod':'172.31.18.9',
             'nonprod':'127.0.0.1'
             ]
 

@@ -7,7 +7,7 @@ version: 'v0.13.1'
 # URLPrefix
 urlprefix: 'hashi-ui.prod.host/'
 
-localIP: '10.0.2.15'
+localIP: '172.31.18.9'
 
 # Resources
 cpu: 500
