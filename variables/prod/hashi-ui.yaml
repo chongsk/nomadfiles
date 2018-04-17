@@ -11,5 +11,5 @@ localIP: '172.31.18.9'
 
 # Resources
 cpu: 500
-memory: 256
+memory: 300
 mbits: 10

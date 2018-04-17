@@ -51,7 +51,9 @@ job "hashi-ui" {
 
         network {
           mbits = [[.mbits]]
-          port  "http"{}
+          port  "http"{
+                      static = 3001
+                      }
         }
       }
     }
