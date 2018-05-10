@@ -10,6 +10,6 @@ urlprefix: 'hashi-ui.prod.host/'
 localIP: '172.31.18.9'
 
 # Resources
-cpu: 500
-memory: 300
+cpu: 600
+memory: 350
 mbits: 10
